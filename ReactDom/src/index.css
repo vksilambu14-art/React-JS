@@ -1,0 +1,163 @@
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f7fb;
+  color: #17233c;
+}
+
+a {
+  text-decoration: none;
+}
+.navigation{
+  height: 70px;
+  background: #ccd8ec;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8%;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+}
+.navigation a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  margin-right: 20px;
+}
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.service-card {
+  padding: 30px;
+  border-radius: 12px;
+  background: #f7faff;
+  border: 1px solid #e2e8f0;
+}
+
+.service-card span {
+  font-size: 35px;
+}
+
+.service-card h2 {
+  margin: 15px 0 10px;
+}
+
+.service-card p {
+  color: #64748b;
+}
+.contact-box {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.contact-box div {
+  padding: 25px;
+  background: #f7faff;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+}
+
+.contact-box h3 {
+  margin-bottom: 10px;
+}
+
+.contact-box p {
+  color: #64748b;
+}
+.student-form {
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.student-form label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.student-form input {
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  outline: none;
+  font-size: 15px;
+}
+
+.student-form input:focus {
+  border-color: #2775e8;
+}
+
+.student-form button {
+  margin-top: 15px;
+  width: fit-content;
+}
+.not-found {
+  min-height: 600px;
+  background: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.error-number {
+  font-size: 110px;
+  font-weight: bold;
+  color: #2775e8;
+}
+
+.not-found h1 {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.not-found p {
+  color: #64748b;
+  margin-bottom: 25px;
+}
+.students-menu {
+  background: #f4f7fb;
+  padding: 20px;
+  border-radius: 10px;
+  height: fit-content;
+}
+
+.students-menu h3 {
+  margin-bottom: 20px;
+}
+
+.students-menu a {
+  display: unset;
+  flex-direction: row;
+  padding: 12px;
+  margin-bottom: 8px;
+  color: #17233c;
+  border-radius: 6px;
+  background: #ccdbf3;
+  color: rgb(63, 62, 62);
+}
+
+.students-menu a:hover {
+  background: #2775e8;
+  color: white;
+}
+
+.student-content {
+  padding: 15px;
+}
+
+.description {
+  color: #64748b;
+  margin-bottom: 25px;
+}
