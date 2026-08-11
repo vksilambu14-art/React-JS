@@ -10,6 +10,7 @@ import AddStudent from "./Pages/AddStudent";
 import StudentDetails from "./Pages/StudentDetails";
 import NotFoundPage from "./Pages/NotFoundPage";
 import Navigation from './Pages/Navigation';
+import Login from './Pages/Login';
 import './App.css'
 
 function App() {
@@ -30,7 +31,9 @@ function App() {
             <Route path='AllStudent' element={<AllStudent />} />
             <Route path='AddStudent' element={<AddStudent />} />
             <Route path='StudentDetails' element={<StudentDetails />} />
+            <Route path='Login' element={<Login />} />
           </Route>
+          
           <Route path='*' element={<NotFoundPage />} />
         </Routes>
       </BrowserRouter>

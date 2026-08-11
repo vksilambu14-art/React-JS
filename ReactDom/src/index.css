@@ -25,6 +25,20 @@ a {
   font-size: 18px;
   margin-right: 20px;
 }
+.navigation a.active {
+ 
+  color: rgb(223, 38, 176);
+}
+.navigation a.inactive{
+  color: #6e1d1d;
+}
+.students-menu a.activeted{
+ 
+  color: rgb(223, 38, 176);
+}
+.students-menu a.inactiveted{
+  color: #6e1d1d;
+}
 .service-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -160,4 +174,90 @@ a {
 .description {
   color: #64748b;
   margin-bottom: 25px;
+}
+/* Login */
+.login-page {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 430px;
+  background: white;
+  padding: 40px;
+  border-radius: 14px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.login-box h1 {
+  text-align: center;
+  color: #1e3a8a;
+  margin-bottom: 8px;
+}
+
+.login-box > p {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 30px;
+}
+
+.login-btn, .full-btn {
+  /* width: 50%; */
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+ justify-self: center;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.form-container {
+  max-width: 650px;
+  margin: auto;
+}
+
+.form-container h2 {
+  margin-bottom: 25px;
+  color: #1e293b;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #334155;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  outline: none;
+  font-size: 15px;
+  background: white;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.submit-btn {
+  margin-top: 5px;
 }
