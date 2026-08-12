@@ -5,17 +5,20 @@ export default function AllStudent() {
     {
       id: 1,
       name: "Silambu ",
-      course: "B.E CSE"
+      course: "B.E CSE",
+      Phone: "9025756596"
     },
     {
       id: 2,
       name: "Siva",
-      course: "MBBS"
+      course: "MBBS",
+      Phone: "9025756597"
     },
     {
       id: 3,
       name: "Sridhar",
-      course: "B.E ECE"
+      course: "B.E ECE",
+      Phone: "9025756598"
     }
   ];
   return (
@@ -32,7 +35,7 @@ export default function AllStudent() {
               <th>ID</th>
               <th>Name</th>
               <th>Course</th>
-             
+             <th>Phone</th>
             </tr>
           </thead>
 
@@ -47,7 +50,7 @@ export default function AllStudent() {
                 <td>{student.name}</td>
 
                 <td>{student.course}</td>
-
+                <td>{student.Phone}</td>
                 
 
               </tr>

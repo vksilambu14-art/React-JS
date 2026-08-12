@@ -13,7 +13,7 @@ export default function Services() {
           <p>Learn different technologies online.</p>
         </div>
 
-        <div className="service-card">
+        <div className="service-card"> 
           <span>📖</span>
           <h2>Study Materials</h2>
           <p>Access useful learning materials.</p>
