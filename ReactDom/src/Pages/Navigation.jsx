@@ -5,7 +5,7 @@ export default function Navigation() {
   
   return (
     
-    <div className='navigation'>
+    <div className='navigation navbar'>
       <NavLink to='/' className={({ isActive }) =>  {return isActive ? 'active' : 'inactive'}}>Home</NavLink>
       <NavLink to='/About' className={({ isActive }) => {return isActive ? 'active' : 'inactive'}}>About</NavLink>
       <NavLink to='/Services' className={({ isActive }) => {return isActive ? 'active' : 'inactive'}}>Services</NavLink>

@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Contact() {
   return (
-    <div>
+    <div className="page">
         
         <h1>Contact </h1>
         <p>
@@ -10,7 +10,7 @@ export default function Contact() {
       </p>
 <div className="contact-box">
 
-        <div>
+        <div >
           <h3>📧 Email</h3>
           <p>silambuv@thestackly.com</p>
         </div>

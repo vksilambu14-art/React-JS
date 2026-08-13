@@ -1,31 +1,32 @@
 import { useState } from 'react'
 import { BrowserRouter, Route,Routes} from "react-router-dom";
-// import Home from './Pages/Home';
-// import About from './Pages/About';
-// import Contact from './Pages/Contact';
-// import Services from './Pages/Services';
-// import Students from './Pages/Students';
-// import AllStudent from "./Pages/AllStudent";
-// import AddStudent from "./Pages/AddStudent";
-// import StudentDetails from "./Pages/StudentDetails";
+import Home from './Pages/Home';
+import About from './Pages/About';
+import Contact from './Pages/Contact';
+import Services from './Pages/Services';
+import Students from './Pages/Students';
+import AllStudent from "./Pages/AllStudent";
+import AddStudent from "./Pages/AddStudent";
+import StudentDetails from "./Pages/StudentDetails";
 import NotFoundPage from "./Pages/NotFoundPage";
-// import Navigation from './Pages/Navigation';
-// import Login from './Pages/Login';
+import Navigation from './Pages/Navigation';
+import Login from './Pages/Login';
+import './Pages/Student.css';
 import './App.css';
-import Products from './ProductPages/Products';
-import ProductDetails from './ProductPages/ProductDetails';
-import ProductNav from './ProductPages/ProductNav';
-import Home from './ProductPages/Home';
-import About from './ProductPages/About';
-import Contact from './ProductPages/Contact';
-import './ProductPages/product.css'
+// import Products from './ProductPages/Products';
+// import ProductDetails from './ProductPages/ProductDetails';
+// import ProductNav from './ProductPages/ProductNav';
+// import Home from './ProductPages/Home';
+// import About from './ProductPages/About';
+// import Contact from './ProductPages/Contact';
+// import './ProductPages/product.css'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div>
-      {/* <h1>React Dom</h1>
+      <h1>Student Management Portal</h1>
       
       <BrowserRouter>
       <Navigation/>
@@ -34,17 +35,17 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/Services' element={<Services />} />
-          <Route path='/Students' element={<Students />} >
-            <Route path='AllStudent' element={<AllStudent />} />
+          <Route path='/Students' element={<Students />} />
+            {/* <Route path='AllStudent' element={<AllStudent />} />
             <Route path='AddStudent' element={<AddStudent />} />
             <Route path='StudentDetails' element={<StudentDetails />} />
-            <Route path='Login' element={<Login />} />
-          </Route>
+            <Route path='Login' element={<Login />} /> */}
+          <Route path="/Students/:id" element={<StudentDetails />} />
           
           <Route path='*' element={<NotFoundPage />} />
         </Routes>
-      </BrowserRouter> */}
-      <h1>Product Management</h1>
+      </BrowserRouter>
+      {/* <h1>Product Management</h1>
       <BrowserRouter>
       <ProductNav/>
       <Routes>
@@ -55,7 +56,7 @@ function App() {
        <Route path="/products/:brand" element={<ProductDetails />} />
         <Route path='*' element={<NotFoundPage />} />
       </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
     </div>
   )
 }
